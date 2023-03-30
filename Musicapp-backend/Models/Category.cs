@@ -9,12 +9,12 @@ namespace Musicapp_backend.Models
     {
         public Category()
         {
-            Songs = new HashSet<Song>();
+            Songs = new List<Song>();
         }
 
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
 
-        public virtual ICollection<Song> Songs { get; set; }
+        public List<Song> Songs { get; set; }
     }
 }

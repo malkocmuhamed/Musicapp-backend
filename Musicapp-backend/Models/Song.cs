@@ -15,7 +15,7 @@ namespace Musicapp_backend.Models
         public string IsFavourite { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? EditedDate { get; set; }
-        public int? CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
         public virtual Category Category { get; set; }
     }
