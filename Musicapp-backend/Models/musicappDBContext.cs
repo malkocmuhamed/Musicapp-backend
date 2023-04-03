@@ -17,8 +17,8 @@ namespace Musicapp_backend.Models
         {
         }
 
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Song> Songs { get; set; }
+        public  DbSet<Category> Categories { get; set; }
+        public  DbSet<Song> Songs { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
