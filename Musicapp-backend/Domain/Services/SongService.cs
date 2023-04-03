@@ -35,6 +35,7 @@ namespace Musicapp_backend.Domain.Services
             songInDB.SongRating = song.SongRating;
             songInDB.IsFavourite = song.IsFavourite;
             songInDB.CategoryId = song.CategoryId;
+            songInDB.EditedDate = DateTime.Now;
             return _songRepository.EditSong(songInDB);
         }
 
